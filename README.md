@@ -85,6 +85,6 @@ Please make sure the following files are at the same directory location/level:
 -	data_2.csv
 
 Steps to run: Go the terminal where one can run python scripts (python 3.x):
-- in the terminal write: $ python modelfitting.py
+- in the terminal type and run: $ python modelfitting.py
 
 
