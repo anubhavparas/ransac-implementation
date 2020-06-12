@@ -2,7 +2,9 @@
 
 Two files of 2D data points are provided in the form of CSV files. The data represents measurements of a projectile with different noise levels.
 Data sets are shown below:
+
 ![alt text](./images/data1.PNG?raw=true "Data set 1")
+
 
 ![alt text](./images/data2.PNG?raw=true "Data set 2")
 
