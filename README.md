@@ -1,6 +1,6 @@
-# RANSAC Algorithm Implementation
+# RANSAC (RANdom SAmple Consensus) Algorithm Implementation
 
-Two files of 2D data points are provided in the form of CSV files. The data represents measurements of a projectile with different noise levels.
+Two files of 2D data points are provided in the form of CSV files. The data represents measurements of a projectile with different noise levels.
 Data sets are shown below:
 ![alt text](./images/data1.PNG?raw=true "Data set 1")
 
@@ -11,23 +11,23 @@ The solution finds a best fit curve to these data sets using RANSAC and least sq
 
 
 #### For data-set 1:
-- We can use the Least-Square method to fit a curve to the data-model as the data-points are close to each other giving a quadratic shape to the distribution of x v/s y
+- We can use the Least-Square method to fit a curve to the data-model as the data-points are close to each other giving a quadratic shape to the distribution of x v/s y
 data.
 - As the values of x-column are evenly spaced we can go with Least-Square method only (if there could have been some irregular distribution in the values of x, we could have
-chosen Total-Least-Square as the basic model to fit the curve, but not in this case)
-- Using least-square method to find the solution of P in the the equation AP = Y we get:
+chosen Total-Least-Square as the basic model to fit the curve, but not in this case)
+- Using least-square method to find the solution of P in the the equation AP = Y we get:
 
     P = (A<sup>T</sup>A)<sup>-1</sup>(A<sup>T</sup>Y)
 
 
 #### For data-set 2:
-- We can observe that few points (can be termed as outliers) in the this data set are far away from most of the points that are roughly following specific pattern/trend
+- We can observe that few points (can be termed as outliers) in the this data set are far away from most of the points that are roughly following specific pattern/trend
 (quadratic curve)
-- If we try to fit a curve using just least-square method, the curve might be shifted towards the outliers too in order to reduce the distance between them and will not
+- If we try to fit a curve using just least-square method, the curve might be shifted towards the outliers too in order to reduce the distance between them and will not
 be able to describe the data better.
-- We can use RANSAC (RANdom SAmple Consensus) algorithm to fit a better curve that can describe the data-set better and also help in detecting/identifying the outliers too.
-- In RANASC, as the same suggests, we will sample few of the data points in our dataset and try tting a curve to the sampled data.
-    - We count the number of points whose distance from the line lie within a specic predened threshold.
+- We can use RANSAC (RANdom SAmple Consensus) algorithm to fit a better curve that can describe the data-set better and also help in detecting/identifying the outliers too.
+- In RANASC, as the same suggests, we will sample few of the data points in our dataset and try fitting a curve to the sampled data.
+    - We count the number of points whose distance from the line lie within a specific predefined threshold.
     - Iterate again with new sample points, solve for the model, count the inliers and check whether the inlier count is greater than any of the previous ones.
     - We select the model which has the maximum number of inliers and that will be our solution to P.
 - To select the model for the sampled data set we used *Least-Square* model method similar to the way it was done for dataset-1.
