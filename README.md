@@ -39,7 +39,7 @@ be able to describe the data better.
     - number of sample = 3, minimum three equations are required to get the values of three parameters: *a, b and c* in *ax<sup>2</sup> + bx + c*
     - p = 0.95, so that most of the points can be covered or described by the model
     - e = 1 - inlier_count/total_data_size (it is adaptive)
-    - threshold = standard deviation of y/2, having a narrow boundary and checking maxi-mum inliers in it increases the desired overall probability of the inliers.
+    - threshold = standard deviation of y/2, having a narrow boundary and checking maximum inliers in it increases the desired overall probability of the inliers.
 
 ## Results:
 
@@ -47,8 +47,7 @@ Representation of curves for dataset 1:
 
 ![alt text](./images/result_dataset1.PNG?raw=true "Representation of curves for dataset 1")
 
-We can see that the model estimated by least-square(LS) method (in red) and the one esti-
-mated by RANSAC method (blue) lie very close to each other. This suggests that LS method
+We can see that the model estimated by least-square(LS) method (in red) and the one estimated by RANSAC method (blue) lie very close to each other. This suggests that LS method
 anyway shows good results with data that does not have abnormal points/noise/outliers.
 
 ---
@@ -59,7 +58,7 @@ Representation of curves for dataset 2 when, threshold = standard deviation/2:
 
 The curve estimated by LS method (red) can be seen moving towards the outlier points too,
 whereas the the curve estimated by RANSAC method (blue) lies somewhere at the center of
-the data-points that together define a quadratic trend more genuinely.
+the data-points that together define a quadratic trend more genuinely.
 
 
 Representation of curves for dataset 2 when, threshold = standard deviation/3:
