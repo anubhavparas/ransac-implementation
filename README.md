@@ -87,4 +87,3 @@ Please make sure the following files are at the same directory location/level:
 Steps to run: Go the terminal where one can run python scripts (python 3.x):
 - in the terminal type and run: $ python modelfitting.py
 
-
