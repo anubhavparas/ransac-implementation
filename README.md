@@ -44,6 +44,7 @@ be able to describe the data better.
 ## Results:
 
 Representation of curves for dataset 1:
+
 ![alt text](./images/result_dataset1.PNG?raw=true "Representation of curves for dataset 1")
 
 We can see that the model estimated by least-square(LS) method (in red) and the one esti-
@@ -53,6 +54,7 @@ anyway shows good results with data that does not have abnormal points/noise/out
 ---
 
 Representation of curves for dataset 2 when, threshold = standard deviation/2:
+
 ![alt text](./images/result_dataset2.PNG?raw=true "Representation of curves for dataset 2 when, threshold = standard deviation/2")
 
 The curve estimated by LS method (red) can be seen moving towards the outlier points too,
@@ -61,10 +63,12 @@ the data-points that together define a quadratic trend more genuinely.
 
 
 Representation of curves for dataset 2 when, threshold = standard deviation/3:
+
 ![alt text](./images/result_dataset2_sd3.PNG?raw=true "Representation of curves for dataset 2 when, threshold = standard deviation/3")
 
 
 Representation of curves for dataset 2 when, threshold = standard deviation/5:
+
 ![alt text](./images/result_dataset2_sd5.PNG?raw=true "Representation of curves for dataset 2 when, threshold = standard deviation/5")
 
  
